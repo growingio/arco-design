@@ -7,4 +7,4 @@ export const hostname =
     : location.hostname;
 
 export const isExternal = location.hostname === arcoConfig.externalHostName;
-export const apiBasename = `https://${hostname || 'arco.design'}`;
+export const apiBasename = `https://${hostname || 'arco.growingio.design'}`;
