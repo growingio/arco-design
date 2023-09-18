@@ -348,6 +348,11 @@
     axios "^0.24.0"
     lodash.throttle "^4.1.1"
 
+"@arco-themes/react-growingio@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@arco-themes/react-growingio/-/react-growingio-0.0.1.tgz#28ceff5603f358297a2a2306947ac6510ef553d6"
+  integrity sha512-QzAJuA712k9ByvfAQzLpq3AWLZQjqQOuOPBR0Qt8tYuoYyf45DMraxlN8bwWdo4uTbSO+w8kva75+DnHMcnwSA==
+
 "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.18.6":
   version "7.18.6"
   resolved "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.18.6.tgz#3b25d38c89600baa2dcc219edfa88a74eb2c427a"

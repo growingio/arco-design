@@ -5,6 +5,7 @@ import axios from 'axios';
 import Navbar from '@arco-materials/site-navbar-new';
 import { ConfigProvider } from '@arco-design/web-react';
 import zhCN from '@arco-design/web-react/es/locale/zh-CN';
+import { componentConfig } from '@arco-themes/react-growingio/config';
 import App from './App';
 import ScrollToTop from './widget/scrollTop';
 import { GlobalContext, GlobalNoticeContext } from './context';
@@ -13,6 +14,7 @@ import locale from './locale/zh';
 import './style/index.less';
 import { isProduction } from './utils/env';
 import { registerServiceWorker } from './serviceWorkerRegistration';
+import '@arco-themes/react-growingio/css/arco.css';
 
 const requestDomain = isProduction ? `//${location.hostname}` : '//localhost:3000';
 
@@ -50,7 +52,7 @@ export function Index() {
       <Navbar.NavbarThemeProvider>
         <GlobalContext.Provider value={{ lang: 'zh-CN', locale, user, rtl, toggleRtl: setRtl }}>
           <ScrollToTop />
-          <ConfigProvider locale={zhCN} rtl={rtl}>
+          <ConfigProvider locale={zhCN} rtl={rtl} componentConfig={componentConfig}>
             <GlobalNoticeContext.Provider
               value={{
                 noticeHeight,
